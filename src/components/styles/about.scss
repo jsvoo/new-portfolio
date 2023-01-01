@@ -1,0 +1,320 @@
+$white : white;
+$green : #27ae60;
+$primary-bkg:#191d2b;
+
+
+.about-container{
+background-color: $primary-bkg;
+color: $white;
+padding: 50px 0px;
+
+  .about{
+    width: 85%;
+    margin: auto;
+  }
+  
+  .header{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-stroke: 5px;
+  }
+  
+  .summaries{
+    display: flex; 
+    gap: 30px; 
+  justify-content: space-between;
+  padding: 20px;
+    .about-me-text{
+      width: 40%; 
+  
+      h1{
+        margin: 0px 0px 20px 20px;
+        -webkit-text-stroke: 1px;
+        // letter-spacing: 1px;
+      }
+  
+      .about-text-width{
+        width: 80%;
+  
+        p{
+          margin: 20px;
+  
+        }
+      }
+    }
+    .stats-section{
+      width: 60%; 
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+  
+  .stat{
+    width: 40%;
+    height: 230px;
+    background-color: #191d2b;
+    box-shadow: 0px 0px 1px 0px grey;
+    border-radius: 7px; 
+  
+  
+    .number{
+      font-size: 50px;
+      -webkit-text-stroke: 5px;
+      width: 85%;
+      margin: auto;
+    }
+  
+    .text{
+      font-size: 25px;
+      width: 60%;
+      margin: 10px auto;
+    }
+  transition: all 0.5s 0s linear;
+  
+    &:hover{
+      border: 1px solid $green;
+      transform: translateY(-4px);
+    }
+  }
+  
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    // padding: 5px;
+    border: 1px solid $green;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    font-weight: 600;
+    margin: 20px  ;
+  }
+
+
+  .divider{
+    width: 40%; 
+    margin: 40px auto;
+    border-top: 1px solid rgb(58, 57, 57);
+  
+    .new-section{
+      text-align: center;
+      margin: 50px 0px;
+    }
+  }
+  
+  .my-skills-section{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    .skill{
+      width: 45%;
+      margin: 10PX;
+    }
+  }
+  .skill-icon-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  .icon{
+    width: 30px;
+    height:30px;
+  }
+  }
+  .full-width{
+    height: 0;
+    width: 80%;
+    border-bottom: 5px solid grey;
+  }
+  .progress-bar{
+    border-top: 5px solid $green;
+    height: 0;
+    width: 80%; 
+  }
+  
+  
+  .js{
+    .icon{
+      color: yellow; 
+    }
+  
+  }
+  .html{
+    .icon{
+      color: #C85433; 
+      background-color: white;
+    }
+    .progress-bar{ 
+      width: 85%; 
+    }
+  }
+  .css{
+    .icon{
+      color: #2449D8; 
+      background-color: white;
+    }
+  }
+  
+  .jquery{
+    .icon{
+      color: skyblue;
+    }
+    .progress-bar{ 
+      width: 90%; 
+    }
+  }
+  .node{
+    .icon{
+      color: greenyellow;
+    }
+    .progress-bar{ 
+      width: 90%; 
+    }
+  }
+  .react{
+    .icon{
+      color: #5CCFEE;
+    }
+  }
+  
+  .mongodb{
+    .icon{
+      color: #4BA13E;
+    }
+  }
+  .sass{
+    .icon{
+      color: #C36291;
+    }
+   
+  }
+  .mysql{
+    .icon{
+      color: white;
+    }
+    .progress-bar{ 
+      width: 70%; 
+    }
+  }
+  .git{
+    .icon{
+      color: white;
+      background-color: black;
+    }
+  }
+  
+  
+  .timeline-section{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+  }
+  .timeline-container{
+    width: 50%;
+    .timeline-icon{  
+      .icon{ 
+    
+        position: relative;
+        left: -23px;
+        top: 60px;
+        background-color: $green;
+        color: white;
+        padding: 15px;
+      }
+    
+    }
+     
+    
+  }
+  .timeline{ 
+    // height: 100px;
+    border-left: 1px solid #2A2E35;
+    padding: 0px 50px;
+    margin: 10px 0px;
+ 
+
+    .date{
+      // border: 2px solid;
+      padding: 5px;
+      width: 150px;
+      text-align:center;
+      border-radius: 20px;
+      background-color: #2A2E35;
+    }
+    .body{
+      margin: 10px 0px;
+
+      p{
+        margin: 10px;
+      }
+    }
+    .role{
+font-weight: 700;
+    }
+    .company{
+      color: #B2BECD;
+    }
+  }
+ 
+}
+
+
+
+
+.a-light-mode{
+  @extend .about-container; 
+    background-color: white; 
+    color: #454E56;
+
+    .green{
+      color: #F56692;
+    }
+    .timeline .date{ 
+      background-color: #F8F8F8;
+      color: #6C7983;
+    }
+
+
+    .stat{ 
+      background-color: white; 
+      box-shadow: 0px 0px 10px 0px grey;  
+    
+      &:hover{
+        border: 1px solid #F56692; 
+      }
+
+    }
+
+    .timeline-container{ 
+      .timeline-icon{  
+        .icon{  
+          background-color: #F56692;
+          color: white; 
+        } 
+      } 
+    }
+
+    .full-width{ 
+      border-bottom: 5px solid #454E56;
+    }
+    .progress-bar{
+      border-top: 5px solid #F56692; 
+    }
+
+    .button{ 
+      border: 1px solid #F56692; 
+      color: #454E56; 
+
+      .green-icon{
+        background-color: #F56692;
+      }
+    }
+}

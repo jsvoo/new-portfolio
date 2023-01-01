@@ -1,0 +1,168 @@
+// import flipkart from "../images/flipkart.png"
+$white : white;
+$green : #27ae60;
+$primary-bkg:#191d2b;
+.portfolio-container{ 
+  color: white; 
+  background-color: $primary-bkg;
+  .intro-text{
+    margin: 20px;
+    text-align: center; 
+  }
+}
+.portfolio-page{
+
+  width: 85%;
+}
+.row1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;  
+  padding: 30px auto;
+  padding: 30px;
+
+} 
+
+.row-item{  
+  width: 30%;
+  height: 300px; 
+  border-radius: 30px;  
+background-size: cover;  
+  background-image: url("../images/flipkart.jpg"); 
+  .source{ 
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    .icon{
+      background-color: black;
+    }
+    .icon:hover{
+      background-color:white;
+      color: black;
+    }
+  }  
+}
+
+.row-item2{
+  background-image: url("../images/ecom.jpg"); 
+
+}
+.row-item3{
+  background-image: url("../images/tumblr.webp"); 
+
+}
+.row-item4{
+  background-image: url("../images/quiz-img.png");  
+}
+
+.row-item5{
+  text-align: center;
+  background-image: url("../images/node.png");  
+
+}
+
+.row-item6{
+  background-image: url("../images/list.png"); 
+
+}
+
+.row-item-more{
+  width: 30%;
+  center{
+    font-size: 70px;
+    -webkit-text-stroke: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; 
+  border-radius: 30px;
+
+
+}
+.more-row-text{
+  @extend .row-text
+}
+.more-row-text::before{
+  content: "View More";
+  -webkit-text-stroke: 1px; 
+  font-size: 20px;
+  color: $green; 
+  width: 200px;
+  text-align: center;
+}
+
+}
+.row-text{ 
+  background-color: transparent;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  transition: all 0.5s  0s linear;
+
+
+  .icon{
+    width: 0px;
+    transition: width 1s, height 1s;
+  }
+  
+}
+ 
+
+ .row-text:hover{ 
+  background-color: $green;  
+  color: $white;
+  border-radius: 30px;
+
+
+  .icon{
+    width: 50px;
+  height: 50px;
+  }
+
+}
+
+
+.p-light-mode{
+  @extend .portfolio-container;
+  background-color: white;
+  color: #454E56;
+
+  .row-text:hover{ 
+    background-color: #F56692;  
+    color: #454E56;  
+  }
+
+
+  .row-item{ 
+    .source{   
+      .icon{
+        background-color: white;
+        color: black;
+      }
+      .icon:hover{
+        background-color:black;
+        color: white;
+      }
+    }  
+  }
+
+  .more-row-text::before{ 
+    color: #F56692;  
+  }
+
+  .green{
+    color: #F56692;
+  }
+
+  .row-item-more{
+    .icon:hover{
+      background-color: white;
+      color: black;
+    }
+  }
+}
