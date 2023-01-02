@@ -57,3 +57,26 @@ a{
     background-color: #F56692;
   }
 }
+
+
+
+
+@media(max-width:770px){
+    .nav-items{
+    z-index: 1; 
+    flex-direction: row !important;
+    top: 100vh; 
+    right: 0;
+    left: 0;
+    bottom: 0vh;
+    justify-content: space-evenly;
+  
+  .mode{ 
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px; 
+  }
+  }
+}
