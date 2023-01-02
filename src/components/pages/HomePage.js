@@ -30,10 +30,9 @@ export default function HomePage() {
             &nbsp; A <br /> Web Developer
           </h1>
           <p>
-            I'm a Web developer, I love to create beautiful and functional
-            websites. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nostrum corporis iste repellendus fuga delectus rerum assumenda
-            magnam sint nam cum.
+            I'm a web developer who thrives at working in a collaborative environment to design user-friendly,
+             visually pleasing, and functional applications utilizing JavaScript, HTML, 
+             and CSS with a focus on problem-solving.
           </p>
           <a className="button" href="../images/image.jpg" download>
             Download CV

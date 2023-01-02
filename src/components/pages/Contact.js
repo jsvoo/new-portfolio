@@ -31,7 +31,7 @@ export default function Contact() {
         <div className="text-region">
           <h1>CONTACT ME HERE</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ea.
+           Would you like to talk? Please contact me through any of the following avenues.
           </p>
 
           <div className="details">
@@ -49,13 +49,13 @@ export default function Contact() {
               </span>{" "}
               <span>: onoja.jsdev@gmail.com</span>
             </div>
-            <div className="items">
+            {/* <div className="items">
               <span className="item">
                 {" "}
                 <FaUserGraduate className="contact_icon" /> Education
               </span>{" "}
               <span>: Kogi State University, Rework Academy</span>
-            </div>
+            </div> */}
             <div className="items">
               <span className="item">
                 {" "}

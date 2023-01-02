@@ -9,7 +9,7 @@ import {
   FaSass,
   FaGithub
 } from "react-icons/fa";
-import { SiJquery, SiMongodb, SiMysql, SiGithub } from "react-icons/si";
+import { SiJquery, SiMongodb, SiMysql, SiGithub, SiExpress } from "react-icons/si";
 import { MdWork } from "react-icons/md";
 import { useContext } from "react";
 import { contextManager } from "../context/PortfolioContext";
@@ -32,15 +32,15 @@ export default function About() {
             <h1>INFORMATION ABOUT ME</h1>
             <div className="about-text-width">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eveniet et voluptatem omnis velit similique quaerat, accusamus
-                incidunt debitis quas?
+               More speed, less space, user-friendly, and aesthetically appealing. 
+               These principles serve as my road map for every process of 
+               turning a tale into a useful tool for problem-solving.
               </p>
 
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Pariatur totam libero quas quis dicta at voluptate repellat ut,
-                obcaecati praesentium. Aperiam, necessitatibus.
+                A team, in my opinion, is only as strong as its individual members. As a result, in order to maximize my potential
+                 and achieve both personal and organizational goals, I am devoted to continuous self-development for enhanced performance excellence, 
+                 leadership, and professionalism.
               </p>
 
               <a className="button" href="../images/image.jpg" download>
@@ -66,8 +66,8 @@ export default function About() {
               <div className="text">LIBRARIES & FRAMEWORKS</div>
             </div>
             <div className="stat">
-              <div className="number green">650+ </div>
-              <div className="text">PROJECTS COMPLETED</div>
+              <div className="number green">A+ </div>
+              <div className="text">AT EXCELLENCE</div>
             </div>
           </div>
         </div>
@@ -123,6 +123,16 @@ export default function About() {
             <h3>NODE JS</h3>
             <div className="skill-icon-section">
               <FaNode className="icon" />{" "}
+              <div className="full-width">
+                <div className="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="skill node">
+            <h3>EXPRESS JS</h3>
+            <div className="skill-icon-section">
+              <SiExpress className="icon" />{" "}
               <div className="full-width">
                 <div className="progress-bar"></div>
               </div>
@@ -193,19 +203,26 @@ export default function About() {
             </div>
 
             <div className="timeline">
-              <div className="date">2010 - PRESENT</div>
+              <div className="date">2022 - PRESENT</div>
               <div className="body">
                 <div className="role">
-                  WEB DEVELOPER -{" "}
+                  WEB DEVELOPER AND INSTRUCTOR -{" "}
                   <span className="company">REWORK TECHNOLOGIES</span>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis rerum beatae libero error temporibus porro.
+                  Developing and maintaining the server-side of web applications, planning, 
+                  designing, and implementing user interface systems for websites, software, 
+                  and web-based applications, and instructing students at the Rework Academy.
                 </p>
               </div>
             </div>
           </div>
+          
+
+       
+          
+
+       
 
           <div className="timeline-container">
             <div className="timeline-icon">
@@ -213,54 +230,77 @@ export default function About() {
             </div>
 
             <div className="timeline">
-              <div className="date">2010 - PRESENT</div>
+              <div className="date">2022</div>
               <div className="body">
                 <div className="role">
-                  WEB DEVELOPER -{" "}
-                  <span className="company">REWORK TECHNOLOGIES</span>
+                 FULL-STACK WEB DEVELOPMENT COURSE -{" "}
+                  <span className="company">REWORK ACADEMY</span>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis rerum beatae libero error temporibus porro.
+                  A one-year intensive project-based program leading to certification as a full-stack (MERN) engineer. 
+                  Extensive knowledge of MongoDB, Express JS, React JS, and Node JS.
+                  </p>
+                  </div>
+            </div>
+          </div>
+          
+          
+             <div className="timeline-container">
+            <div className="timeline-icon">
+              <MdWork className="icon" />
+            </div>
+
+            <div className="timeline">
+              <div className="date">2021 - 2022</div>
+              <div className="body">
+                <div className="role">
+                 DATA PERSONNEL -{" "}
+                  <span className="company">MARYLAND GLOBAL INITIATIVES CORPORATION</span>
+                </div>
+                <p>
+                 Gathering and organizing research data to develop the COVID-19 vaccination safety profile in Nigeria.
                 </p>
               </div>
             </div>
           </div>
+          
+          
+          
+             <div className="timeline-container">
+            <div className="timeline-icon">
+              <MdWork className="icon" />
+            </div>
 
+            <div className="timeline">
+              <div className="date">2019 - 2022</div>
+              <div className="body">
+                <div className="role">
+                  RESEARCH ASSISTANT -{" "}
+                  <span className="company">KOGI STATE UNIVERSITY</span>
+                </div>
+                <p>
+                 Preparing for and conducting experiments, composing scientific articles for publishing
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
           <div className="timeline-container">
             <div className="timeline-icon">
               <MdWork className="icon" />
             </div>
 
             <div className="timeline">
-              <div className="date">2010 - PRESENT</div>
+              <div className="date">2015 - 2019</div>
               <div className="body">
                 <div className="role">
-                  WEB DEVELOPER -{" "}
-                  <span className="company">REWORK TECHNOLOGIES</span>
+                  BACHELOR'S DEGREE IN BIOCHEMISTRY -{" "}
+                  <span className="company">KOGI STATE UNIVERSITY</span>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis rerum beatae libero error temporibus porro.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="timeline-container">
-            <div className="timeline-icon">
-              <MdWork className="icon" />
-            </div>
-
-            <div className="timeline">
-              <div className="date">2010 - PRESENT</div>
-              <div className="body">
-                <div className="role">
-                  WEB DEVELOPER -{" "}
-                  <span className="company">REWORK TECHNOLOGIES</span>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis rerum beatae libero error temporibus porro.
+                 Natural sciences interdisciplinary discipline requiring critical thinking, teamwork, tenacity, and problem-solving through research.
                 </p>
               </div>
             </div>
