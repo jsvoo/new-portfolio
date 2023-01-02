@@ -33,7 +33,7 @@
   }
   .nav-items{
     z-index: 1; 
-    flex-direction: row;
+    flex-direction: row !important;
     top: 100vh;
     right: 0;
     left: 0;
