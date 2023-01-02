@@ -7,9 +7,15 @@ import {
   FaNode,
   FaReact,
   FaSass,
-  FaGithub
+  FaGithub,
 } from "react-icons/fa";
-import { SiJquery, SiMongodb, SiMysql, SiGithub, SiExpress } from "react-icons/si";
+import {
+  SiJquery,
+  SiMongodb,
+  SiMysql,
+  SiGithub,
+  SiExpress,
+} from "react-icons/si";
 import { MdWork } from "react-icons/md";
 import { useContext } from "react";
 import { contextManager } from "../context/PortfolioContext";
@@ -32,15 +38,18 @@ export default function About() {
             <h1>INFORMATION ABOUT ME</h1>
             <div className="about-text-width">
               <p>
-               More speed, less space, user-friendly, and aesthetically appealing. 
-               These principles serve as my road map for every process of 
-               turning a tale into a useful tool for problem-solving.
+                More speed, less space, user-friendly, and aesthetically
+                appealing. These principles serve as my road map for every
+                process of turning a tale into a useful tool for
+                problem-solving.
               </p>
 
               <p>
-                A team, in my opinion, is only as strong as its individual members. As a result, in order to maximize my potential
-                 and achieve both personal and organizational goals, I am devoted to continuous self-development for enhanced performance excellence, 
-                 leadership, and professionalism.
+                A team, in my opinion, is only as strong as its individual
+                members. As a result, in order to maximize my potential and
+                achieve both personal and organizational goals, I am devoted to
+                continuous self-development for enhanced performance excellence,
+                leadership, and professionalism.
               </p>
 
               <a className="button" href="../images/image.jpg" download>
@@ -128,7 +137,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          
+
           <div className="skill node">
             <h3>EXPRESS JS</h3>
             <div className="skill-icon-section">
@@ -210,19 +219,14 @@ export default function About() {
                   <span className="company">REWORK TECHNOLOGIES</span>
                 </div>
                 <p>
-                  Developing and maintaining the server-side of web applications, planning, 
-                  designing, and implementing user interface systems for websites, software, 
-                  and web-based applications, and instructing students at the Rework Academy.
+                  Developing and maintaining the server-side of web
+                  applications, planning, designing, and implementing user
+                  interface systems for websites, software, and web-based
+                  applications, and instructing students at the Rework Academy.
                 </p>
               </div>
             </div>
           </div>
-          
-
-       
-          
-
-       
 
           <div className="timeline-container">
             <div className="timeline-icon">
@@ -233,19 +237,19 @@ export default function About() {
               <div className="date">2022</div>
               <div className="body">
                 <div className="role">
-                 FULL-STACK WEB DEVELOPMENT COURSE -{" "}
+                  FULL-STACK WEB DEVELOPMENT COURSE -{" "}
                   <span className="company">REWORK ACADEMY</span>
                 </div>
                 <p>
-                  A one-year intensive project-based program leading to certification as a full-stack (MERN) engineer. 
-                  Extensive knowledge of MongoDB, Express JS, React JS, and Node JS.
-                  </p>
-                  </div>
+                  A one-year intensive project-based program leading to
+                  certification as a full-stack (MERN) engineer. Extensive
+                  knowledge of MongoDB, Express JS, React JS, and Node JS.
+                </p>
+              </div>
             </div>
           </div>
-          
-          
-             <div className="timeline-container">
+
+          <div className="timeline-container">
             <div className="timeline-icon">
               <MdWork className="icon" />
             </div>
@@ -254,19 +258,20 @@ export default function About() {
               <div className="date">2021 - 2022</div>
               <div className="body">
                 <div className="role">
-                 DATA PERSONNEL -{" "}
-                  <span className="company">MARYLAND GLOBAL INITIATIVES CORPORATION</span>
+                  DATA PERSONNEL -{" "}
+                  <span className="company">
+                    MARYLAND GLOBAL INITIATIVES CORPORATION
+                  </span>
                 </div>
                 <p>
-                 Gathering and organizing research data to develop the COVID-19 vaccination safety profile in Nigeria.
+                  Gathering and organizing research data to develop the COVID-19
+                  vaccination safety profile in Nigeria.
                 </p>
               </div>
             </div>
           </div>
-          
-          
-          
-             <div className="timeline-container">
+
+          <div className="timeline-container">
             <div className="timeline-icon">
               <MdWork className="icon" />
             </div>
@@ -279,14 +284,13 @@ export default function About() {
                   <span className="company">KOGI STATE UNIVERSITY</span>
                 </div>
                 <p>
-                 Preparing for and conducting experiments, composing scientific articles for publishing
+                  Preparing for and conducting experiments, composing scientific
+                  articles for publishing
                 </p>
               </div>
             </div>
           </div>
-          
-          
-          
+
           <div className="timeline-container">
             <div className="timeline-icon">
               <MdWork className="icon" />
@@ -300,7 +304,9 @@ export default function About() {
                   <span className="company">KOGI STATE UNIVERSITY</span>
                 </div>
                 <p>
-                 Natural sciences interdisciplinary discipline requiring critical thinking, teamwork, tenacity, and problem-solving through research.
+                  Natural sciences' interdisciplinary discipline requiring
+                  critical thinking, teamwork, tenacity, and problem-solving
+                  through research.
                 </p>
               </div>
             </div>
