@@ -14,11 +14,12 @@ export default function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route element={<HomePage />} path="/" />
+          {/* Took out manual routes to switch components with state and ternary operators instaed  */}
+          {/* <Route element={<HomePage />} path="/home" />
           <Route element={<Navigation />} path="nav" />
           <Route element={<Contact />} path="contact" />
           <Route element={<Portfolio />} path="portfolio" />
-          <Route element={<About />} path="about" />
+          <Route element={<About />} path="about" /> */}
         </Routes>
       </BrowserRouter>
     </PortfolioContext>
