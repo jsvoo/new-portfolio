@@ -117,3 +117,14 @@ color: black;
 }
 
 }
+
+
+@media(max-width:770px){
+  .homepage-container{
+    .text-section{
+      p{
+        width:100%
+      }
+    }
+  }
+}
