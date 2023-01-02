@@ -24,30 +24,38 @@
 
   .contact-page{
     .header{
-      padding: 0; 
+      font-size:30px !important;
+      padding: 0 !important; 
   
       p{
-        font-size: 40px;
+        font-size: 40px !important;
+      }
+      h1{
+        font-size:30px !important;
       }
     }
   }
-  .nav-items{
-    z-index: 1; 
-    flex-direction: row !important;
-    top: 100vh;
-    right: 0;
-    left: 0;
-    bottom: 0vh;
-    justify-content: space-evenly;
   
-  .mode{ 
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px; 
-  }
-  }
+  //NAV MEDIA QUERY MOVED TO THE NAVIGATION.SCSS COMPONENT
+  // .nav-items{
+  //   z-index: 1; 
+  //   flex-direction: row !important;
+  //   // top: 100vh;
+  //   top:0;
+  //   // display:none !important ;
+  //   right: 0;
+  //   left: 0;
+  //   bottom: 0vh;
+  //   justify-content: space-evenly;
+  
+  // .mode{ 
+  //   position: fixed;
+  //   top: 10px;
+  //   right: 10px;
+  //   width: 50px;
+  //   height: 50px; 
+  // }
+  // }
 
 .homepage-container{ 
   .homepage{
@@ -58,7 +66,7 @@
 
       h1{
         margin: auto;
-        width: 90%;
+        width: 95%;
         font-size: 35px;
       }
   
@@ -104,10 +112,25 @@
 }
 
   .about-container{ 
+       padding-bottom:80px !important;
+       .header{
+      font-size:51px !important;
+      padding: 0 !important; 
+      -webkit-text-stroke:2px !important;
+  
+      p{
+        font-size: 40px !important;
+      }
+      h1{
+        font-size:30px !important;
+      }
+    }
+    
+    
     .summaries{
       flex-direction: column;
       .about-me-text, .stats-section, .stat{
-        width: 100%;
+        width: 100% !important;
         p{
           width: 100%; 
         }
@@ -123,12 +146,13 @@
     }
 
   .divider{
-    width: 100%;
+    width: 100% !important;
+    
   }
 
   .my-skills-section{
     .skill{
-      width: 100%;
+      width: 100% !important;
       margin: 15px;
     }
 
@@ -136,10 +160,16 @@
 
 .timeline-section{
   flex-direction: column;
-  width: 95%;
+  width: 95% !important;
   margin: auto;
   .timeline-container{
     width: 100%;
+    .timeline{
+      .date{
+        margin:0px 30px;
+      }
+      padding:10px 20px;
+    }
   }
 }
 
@@ -148,6 +178,7 @@
 
 
   .contact-page-container{ 
+       padding-bottom:80px !important;
     .text-region{
       h1{
         font-size: 20px;
@@ -165,13 +196,14 @@
 
 
   .portfolio-container{
+    padding-bottom:80px;
     .intro-text{
       margin: 10px; 
     }
 
 
   //   .contact-page .header p {
-  //     font-size: 40px; 
+  //     font-size: 40px !important; 
   // }
   .row1{
     flex-direction: column; 
