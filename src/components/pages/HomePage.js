@@ -30,11 +30,12 @@ export default function HomePage() {
             &nbsp; A <br /> Web Developer
           </h1>
           <p>
-            I'm a web developer who thrives at working in a collaborative environment to design user-friendly,
-             visually pleasing, and functional applications utilizing JavaScript, HTML, 
-             and CSS with a focus on problem-solving.
+            I'm a web developer who thrives at working in a collaborative
+            environment to design user-friendly, visually pleasing, and
+            functional applications utilizing JavaScript, HTML, and CSS with a
+            focus on problem-solving.
           </p>
-          <a className="button" href="../images/image.jpg" download>
+          <a className="button" href="../images/resume.pdf" download>
             Download CV
             <div className="green-icon">
               <FaDownload />
