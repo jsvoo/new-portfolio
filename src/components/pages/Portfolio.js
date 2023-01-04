@@ -2,6 +2,7 @@ import "../styles/portfolio.scss";
 import { FaGithub } from "react-icons/fa";
 import { FiCodesandbox } from "react-icons/fi";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { contextManager } from "../context/PortfolioContext";
 export default function Portfolio() {
   const { initial } = useContext(contextManager);
@@ -31,12 +32,18 @@ export default function Portfolio() {
               <p>With React JS</p>
               <h3>Project Source</h3>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
-                <div className="icon">
+                <a
+                  href="https://github.com/jsvoo/Ecommerce-flipkart-copy-with-ReactJs"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
+
+                {/* <div className="icon">
                   <FiCodesandbox />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -45,13 +52,17 @@ export default function Portfolio() {
               <h2 className="child">Ecommerce system </h2>
               <p>With jQuery</p>
               <h3>Project Source</h3>
+
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
-                <div className="icon">
+                <a href="https://github.com/jsvoo/Sassi-Holford" target="blank">
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
+
+                {/* <div className="icon">
                   <FiCodesandbox />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -62,12 +73,20 @@ export default function Portfolio() {
               <p>With React JS</p>
               <h3>Project Source</h3>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
-                <div className="icon">
-                  <FiCodesandbox />
-                </div>
+                <a
+                  href="https://github.com/jsvoo/Tumblr-blog-system"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
+
+                <a href="https://codesandbox.io/s/tumblr-ps9r9d" target="blank">
+                  <div className="icon">
+                    <FiCodesandbox />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -78,12 +97,14 @@ export default function Portfolio() {
               <p>With Vanilla JS</p>
               <h3>Project Source</h3>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
-                <div className="icon">
+                <a href="https://github.com/jsvoo/Quiz-app" target="blank">
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
+                {/* <div className="icon">
                   <FiCodesandbox />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -94,12 +115,17 @@ export default function Portfolio() {
               <p>With Node JS</p>
               <h3>Project Source</h3>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
-                <div className="icon">
+                <a
+                  href="https://github.com/jsvoo/Tumblr-Backend"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
+                {/* <div className="icon">
                   <FiCodesandbox />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -113,9 +139,9 @@ export default function Portfolio() {
                 <div className="icon">
                   <FaGithub />
                 </div>
-                <div className="icon">
+                {/* <div className="icon">
                   <FiCodesandbox />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -125,9 +151,14 @@ export default function Portfolio() {
             <div className="more-row-text">
               <h2 className="child">View More Projects </h2>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
+                <a
+                  href="https://github.com/jsvoo?tab=repositories"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
                 <div className="icon">
                   <FiCodesandbox />
                 </div>
