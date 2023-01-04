@@ -1,5 +1,5 @@
 import "../styles/portfolio.scss";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaChrome } from "react-icons/fa";
 import { FiCodesandbox } from "react-icons/fi";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -60,9 +60,11 @@ export default function Portfolio() {
                   </div>
                 </a>
 
-                {/* <div className="icon">
-                  <FiCodesandbox />
-                </div> */}
+                <a href="https://sassiholford-copy.netlify.app/" target="blank">
+                  <div className="icon">
+                    <FaChrome />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -85,6 +87,12 @@ export default function Portfolio() {
                 <a href="https://codesandbox.io/s/tumblr-ps9r9d" target="blank">
                   <div className="icon">
                     <FiCodesandbox />
+                  </div>
+                </a>
+
+                <a href="https://pm2nvq-3000.preview.csb.app/" target="blank">
+                  <div className="icon">
+                    <FaChrome />
                   </div>
                 </a>
               </div>
@@ -123,9 +131,11 @@ export default function Portfolio() {
                     <FaGithub />
                   </div>
                 </a>
-                {/* <div className="icon">
-                  <FiCodesandbox />
-                </div> */}
+                <a href="https://tumblr-api.cyclic.app/posts" target="blank">
+                  <div className="icon">
+                    <FaChrome />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -136,9 +146,14 @@ export default function Portfolio() {
               <p>With Node JS</p>
               <h3>Project Source</h3>
               <div className="source">
-                <div className="icon">
-                  <FaGithub />
-                </div>
+                <a
+                  href="https://github.com/jsvoo?tab=repositories"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaGithub />
+                  </div>
+                </a>
                 {/* <div className="icon">
                   <FiCodesandbox />
                 </div> */}
