@@ -9,10 +9,29 @@ import {
   FaYoutube
 } from "react-icons/fa";
 import { useContext } from "react";
-import { contextManager } from "../context/PortfolioContext";
+import { contextManager } from "../context/PortfolioContext"; 
 
 export default function Contact() {
   const { initial } = useContext(contextManager);
+const [message, setMessage] = useState({
+  name:"",
+  email:"",
+  subject:"",
+  message:""
+})
+  function sendMessage(){
+    fetch("https://tumblr-api.cyclic.app/", 
+    {
+      method:"POST",
+      headers:{"ContentType":"application/json"},
+      body:JSON.stringify(message)
+    }).then((resp)=>resp.json()).then((data)=>{
+      console.log(data)
+    }).catch(err=>{
+      console.log(err)
+    })
+  }
+
   return (
     <div
       className={
@@ -90,13 +109,22 @@ export default function Contact() {
 
         <div className="input-section">
           <div>
-            <input type="text" placeholder="YOUR NAME" />
+            <input type="text" placeholder="YOUR NAME"
+            value={message.name}
+            onChange={(e)=>setMessage({...message, name:e.target.value})}
+            />
           </div>
           <div>
-            <input type="text" placeholder="YOUR EMAIL" />
+            <input type="text" placeholder="YOUR EMAIL"
+            value={message.email}
+            onChange={(e)=>setMessage({...message, email:e.target.value})}
+            />
           </div>
           <div>
-            <input type="text" placeholder="ENTER SUBJECT" />
+            <input type="text" placeholder="ENTER SUBJECT"
+            value={message.subject}
+            onChange={(e)=>setMessage({...message, subject:e.target.value})}
+            />
           </div>
           <div>
             <textarea
@@ -105,12 +133,16 @@ export default function Contact() {
               cols="30"
               rows="10"
               placeholder="Message Here..."
+              value={message.message}
+            onChange={(e)=>setMessage({...message, message:e.target.value})}
             >
               {" "}
             </textarea>
           </div>
 
-          <button>Send Message</button>
+          <button
+          onClick={()=>sendMessage()}
+          >Send Message</button>
         </div>
       </div>
     </div>
