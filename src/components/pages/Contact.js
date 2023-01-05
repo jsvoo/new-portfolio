@@ -6,30 +6,32 @@ import {
   FaFacebookF,
   FaTwitter,
   FaGithub,
-  FaYoutube
+  FaYoutube,
 } from "react-icons/fa";
-import { useContext } from "react";
-import { contextManager } from "../context/PortfolioContext"; 
+import { useContext, useState } from "react";
+import { contextManager } from "../context/PortfolioContext";
 
 export default function Contact() {
   const { initial } = useContext(contextManager);
-const [message, setMessage] = useState({
-  name:"",
-  email:"",
-  subject:"",
-  message:""
-})
-  function sendMessage(){
-    fetch("https://tumblr-api.cyclic.app/", 
-    {
-      method:"POST",
-      headers:{"ContentType":"application/json"},
-      body:JSON.stringify(message)
-    }).then((resp)=>resp.json()).then((data)=>{
-      console.log(data)
-    }).catch(err=>{
-      console.log(err)
+  const [message, setMessage] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  function sendMessage() {
+    console.log(message);
+    fetch("https://tumblr-api.cyclic.app/portfolio/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(message),
     })
+      .then((resp) => resp.json())
+      .then((data) => console.log(data));
+
+    //   .catch((err)=>{
+    //   console.log(err)
+    // })
   }
 
   return (
@@ -50,7 +52,8 @@ const [message, setMessage] = useState({
         <div className="text-region">
           <h1>CONTACT ME HERE</h1>
           <p>
-           Would you like to talk? Please contact me through any of the following avenues.
+            Would you like to talk? Please contact me through any of the
+            following avenues.
           </p>
 
           <div className="details">
@@ -109,21 +112,31 @@ const [message, setMessage] = useState({
 
         <div className="input-section">
           <div>
-            <input type="text" placeholder="YOUR NAME"
-            value={message.name}
-            onChange={(e)=>setMessage({...message, name:e.target.value})}
+            <input
+              type="text"
+              placeholder="YOUR NAME"
+              value={message.name}
+              onChange={(e) => setMessage({ ...message, name: e.target.value })}
             />
           </div>
           <div>
-            <input type="text" placeholder="YOUR EMAIL"
-            value={message.email}
-            onChange={(e)=>setMessage({...message, email:e.target.value})}
+            <input
+              type="text"
+              placeholder="YOUR EMAIL"
+              value={message.email}
+              onChange={(e) =>
+                setMessage({ ...message, email: e.target.value })
+              }
             />
           </div>
           <div>
-            <input type="text" placeholder="ENTER SUBJECT"
-            value={message.subject}
-            onChange={(e)=>setMessage({...message, subject:e.target.value})}
+            <input
+              type="text"
+              placeholder="ENTER SUBJECT"
+              value={message.subject}
+              onChange={(e) =>
+                setMessage({ ...message, subject: e.target.value })
+              }
             />
           </div>
           <div>
@@ -134,15 +147,15 @@ const [message, setMessage] = useState({
               rows="10"
               placeholder="Message Here..."
               value={message.message}
-            onChange={(e)=>setMessage({...message, message:e.target.value})}
+              onChange={(e) =>
+                setMessage({ ...message, message: e.target.value })
+              }
             >
               {" "}
             </textarea>
           </div>
 
-          <button
-          onClick={()=>sendMessage()}
-          >Send Message</button>
+          <button onClick={() => sendMessage()}>Send Message</button>
         </div>
       </div>
     </div>
