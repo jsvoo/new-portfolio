@@ -21,7 +21,6 @@ import { useContext } from "react";
 import { contextManager } from "../context/PortfolioContext";
 export default function About() {
   const { initial } = useContext(contextManager);
-
   return (
     <div
       className={
