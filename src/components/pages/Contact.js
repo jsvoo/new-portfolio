@@ -19,19 +19,41 @@ export default function Contact() {
     subject: "",
     message: "",
   });
-  function sendMessage() {
-    console.log(message);
+  const [empty, setEmpty] = useState(false)
+  const [success, setSuccess] = useState({loading:false, message:""})
+  
+  function handleValidation(){
+    if(message.name==="" || message.email===""|| message.subject===""||message.message===""){
+      setEmpty(true)
+    }else{
+      setEmpty(false);
+      sendMessage()
+    }
+  }
+  function sendMessage() { 
+    setSuccess({...success, loading:true})
     fetch("https://tumblr-api.cyclic.app/portfolio/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(message),
     })
-      .then((resp) => resp.json())
-      .then((data) => console.log(data));
-
-    //   .catch((err)=>{
-    //   console.log(err)
-    // })
+      .then((resp) => {  
+        if(resp.ok){
+          setSuccess({...success, message:"Thank you for reaching out. I'd be in touch with you via" + message.email + " shortly"})
+          setSuccess({...success, loading:false})
+          console.log(success)
+        }
+        console.log(resp); 
+        return resp.json()
+      })
+      .then((data) => {
+        console.log(data)
+        setSuccess({...success, message:"data"})
+        setSuccess({...success, loading:false})
+      })
+      .catch((err)=>{
+      console.log(err)
+    })
   }
 
   return (
@@ -118,6 +140,9 @@ export default function Contact() {
               value={message.name}
               onChange={(e) => setMessage({ ...message, name: e.target.value })}
             />
+            {
+              empty && message.name===""?(<p className="error-message">Kindly fill in your name</p>):null
+            }
           </div>
           <div>
             <input
@@ -128,6 +153,9 @@ export default function Contact() {
                 setMessage({ ...message, email: e.target.value })
               }
             />
+             {
+              empty && message.email===""?(<p className="error-message">Kindly enter your email address</p>):null
+            }
           </div>
           <div>
             <input
@@ -138,6 +166,9 @@ export default function Contact() {
                 setMessage({ ...message, subject: e.target.value })
               }
             />
+             {
+              empty && message.subject===""?(<p className="error-message">Subject field is required</p>):null
+            }
           </div>
           <div>
             <textarea
@@ -153,9 +184,19 @@ export default function Contact() {
             >
               {" "}
             </textarea>
+             {
+              empty && message.message===""?(<p className="error-message">Kindly enter a message to send me</p>):null
+            }
           </div>
+          
+          {
+            success.loading && (<p>Sending message...</p>)
+          }
+          {
+            !success.loading && success.message? (<p> success.message</p>):null
+          }
 
-          <button onClick={() => sendMessage()}>Send Message</button>
+          <button onClick={() => handleValidation()}>Send Message</button>
         </div>
       </div>
     </div>
