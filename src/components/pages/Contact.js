@@ -6,13 +6,56 @@ import {
   FaFacebookF,
   FaTwitter,
   FaGithub,
-  FaYoutube
+  FaYoutube,
 } from "react-icons/fa";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { contextManager } from "../context/PortfolioContext";
 
 export default function Contact() {
   const { initial } = useContext(contextManager);
+  const [message, setMessage] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [empty, setEmpty] = useState(false)
+  const [success, setSuccess] = useState({loading:false, message:""})
+  
+  function handleValidation(){
+    if(message.name==="" || message.email===""|| message.subject===""||message.message===""){
+      setEmpty(true)
+    }else{
+      setEmpty(false);
+      sendMessage()
+    }
+  }
+  function sendMessage() { 
+    setSuccess({...success, loading:true})
+    fetch("https://tumblr-api.cyclic.app/portfolio/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(message),
+    })
+      .then((resp) => {  
+        if(resp.ok){
+          setSuccess({...success, message:"Thank you for reaching out. I'd be in touch with you via" + message.email + " shortly"})
+          setSuccess({...success, loading:false})
+          console.log(success)
+        }
+        console.log(resp); 
+        return resp.json()
+      })
+      .then((data) => {
+        console.log(data)
+        setSuccess({...success, message:"data"})
+        setSuccess({...success, loading:false})
+      })
+      .catch((err)=>{
+      console.log(err)
+    })
+  }
+
   return (
     <div
       className={
@@ -31,7 +74,8 @@ export default function Contact() {
         <div className="text-region">
           <h1>CONTACT ME HERE</h1>
           <p>
-           Would you like to talk? Please contact me through any of the following avenues.
+            Would you like to talk? Please contact me through any of the
+            following avenues.
           </p>
 
           <div className="details">
@@ -90,13 +134,41 @@ export default function Contact() {
 
         <div className="input-section">
           <div>
-            <input type="text" placeholder="YOUR NAME" />
+            <input
+              type="text"
+              placeholder="YOUR NAME"
+              value={message.name}
+              onChange={(e) => setMessage({ ...message, name: e.target.value })}
+            />
+            {
+              empty && message.name===""?(<p className="error-message">Kindly fill in your name</p>):null
+            }
           </div>
           <div>
-            <input type="text" placeholder="YOUR EMAIL" />
+            <input
+              type="text"
+              placeholder="YOUR EMAIL"
+              value={message.email}
+              onChange={(e) =>
+                setMessage({ ...message, email: e.target.value })
+              }
+            />
+             {
+              empty && message.email===""?(<p className="error-message">Kindly enter your email address</p>):null
+            }
           </div>
           <div>
-            <input type="text" placeholder="ENTER SUBJECT" />
+            <input
+              type="text"
+              placeholder="ENTER SUBJECT"
+              value={message.subject}
+              onChange={(e) =>
+                setMessage({ ...message, subject: e.target.value })
+              }
+            />
+             {
+              empty && message.subject===""?(<p className="error-message">Subject field is required</p>):null
+            }
           </div>
           <div>
             <textarea
@@ -105,12 +177,26 @@ export default function Contact() {
               cols="30"
               rows="10"
               placeholder="Message Here..."
+              value={message.message}
+              onChange={(e) =>
+                setMessage({ ...message, message: e.target.value })
+              }
             >
               {" "}
             </textarea>
+             {
+              empty && message.message===""?(<p className="error-message">Kindly enter a message to send me</p>):null
+            }
           </div>
+          
+          {
+            success.loading && (<p>Sending message...</p>)
+          }
+          {
+            !success.loading && success.message? (<p> success.message</p>):null
+          }
 
-          <button>Send Message</button>
+          <button onClick={() => handleValidation()}>Send Message</button>
         </div>
       </div>
     </div>
