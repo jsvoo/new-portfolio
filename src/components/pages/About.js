@@ -214,14 +214,19 @@ export default function About() {
               <div className="date">2022 - PRESENT</div>
               <div className="body">
                 <div className="role">
-                  WEB DEVELOPER AND INSTRUCTOR -{" "}
+                  FULL-STACK WEB ENGINEER AND INSTRUCTOR -{" "}
                   <span className="company">REWORK TECHNOLOGIES</span>
                 </div>
                 <p>
-                  Developing and maintaining the server-side of web
+                  {/* Developing and maintaining the server-side of web
                   applications, planning, designing, and implementing user
                   interface systems for websites, software, and web-based
-                  applications, and instructing students at the Rework Academy.
+                  applications, and instructing students at the Rework Academy. */}
+                  •	Planning, designing, and implementing user interface systems for websites, software, and web-based applications with HTML, CSS/SASS, Javascript, jQuery, Node.JS and React. JS. <br />
+•	Directing the creation of the backend systems with a focus on speed and size <br />
+ •	Tweaking and reviewing updates to systems that have already been built to improve speed, reduce space consumption, and cut production costs. <br />
+  •	Offering assistance and mentoring to students at the Rework Academy. 
+
                 </p>
               </div>
             </div>
@@ -262,9 +267,10 @@ export default function About() {
                     MARYLAND GLOBAL INITIATIVES CORPORATION
                   </span>
                 </div>
-                <p>
-                  Gathering and organizing research data to develop the COVID-19
-                  vaccination safety profile in Nigeria.
+                <p> •	Gathering, organizing, and analyzing research data to develop the COVID-19 vaccination safety profile in Nigeria; <br />
+•	Assisting the software development team with building, testing, and deploying the research web application. <br />
+•	Software testing and bug reports
+
                 </p>
               </div>
             </div>
@@ -279,12 +285,14 @@ export default function About() {
               <div className="date">2019 - 2022</div>
               <div className="body">
                 <div className="role">
-                  RESEARCH ASSISTANT -{" "}
-                  <span className="company">KOGI STATE UNIVERSITY</span>
+                  FRONT-END ENGINEER -{" "}
+                  <span className="company">YWALA TECHNOLOGIES</span>
                 </div>
                 <p>
-                  Preparing for and conducting experiments, composing scientific
-                  articles for publishing
+                •	Utilizing HTML, CSS, JavaScript, and, jQuery to develop production-ready user interfaces that are responsive across all devices. <br />
+                •	Working with a diverse team that includes architecture, investigation, product development, and engineering to ship products that satisfy both the demands of users and the goals of our current clients. <br />
+  
+
                 </p>
               </div>
             </div>
