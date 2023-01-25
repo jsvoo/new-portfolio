@@ -26,9 +26,52 @@ export default function Portfolio() {
         </p>
 
         <div className="row1">
+
+          <div className=" row-item akeru">
+            <div className="row-text">
+              <h2 className="child  ">Haulage and Logistics System + asset management system</h2>
+              <p>Frontend:  React JS</p>
+              <p>Backend:  Node JS</p>
+              <h3>View Live project</h3>
+              <div className="source">
+                <a
+                  href="https://akeru.ng"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaChrome />
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div className=" row-item reworkacademy">
+            <div className="row-text">
+              <h2 className="child  ">School Management System</h2>
+              <p>Frontend:  React JS</p>
+              <p>Backend:  Node JS</p>
+              <h3>View Live project</h3>
+              <div className="source">
+                <a
+                  href="https://reworkacademy.co"
+                  target="blank"
+                >
+                  <div className="icon">
+                    <FaChrome />
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+
           <div className=" row-item">
             <div className="row-text">
-              <h2 className="child">Ecommerce system </h2>
+              <h2 className="child">Ecommerce system + Content Management System </h2>
               <p>With React JS</p>
               <h3>Project Source</h3>
               <div className="source">
@@ -40,16 +83,15 @@ export default function Portfolio() {
                     <FaGithub />
                   </div>
                 </a>
-
-                {/* <div className="icon">
-                  <FiCodesandbox />
-                </div> */}
+ 
               </div>
             </div>
           </div>
+
+
           <div className=" row-item row-item2">
             <div className="row-text">
-              <h2 className="child">Ecommerce system </h2>
+              <h2 className="child">Ecommerce system + Admin dashboard </h2>
               <p>With jQuery</p>
               <h3>Project Source</h3>
 
@@ -71,7 +113,7 @@ export default function Portfolio() {
 
           <div className=" row-item row-item3">
             <div className="row-text">
-              <h2 className="child">Blog system </h2>
+              <h2 className="child">Complex Blog system </h2>
               <p>With React JS</p>
               <h3>Project Source</h3>
               <div className="source">
