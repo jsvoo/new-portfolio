@@ -66,7 +66,7 @@ export default function About() {
               <div className="text">PROJECTS COMPLETED</div>
             </div>
             <div className="stat">
-              <div className="number green">3+ </div>
+              <div className="number green">5+ </div>
               <div className="text">YEARS OF EXPEREIENCE</div>
             </div>
             <div className="stat">
@@ -222,11 +222,15 @@ export default function About() {
                   applications, planning, designing, and implementing user
                   interface systems for websites, software, and web-based
                   applications, and instructing students at the Rework Academy. */}
-                  •	Planning, designing, and implementing user interface systems for websites, software, and web-based applications with HTML, CSS/SASS, Javascript, jQuery, Node.JS and React. JS. <br />
-•	Directing the creation of the backend systems with a focus on speed and size <br />
- •	Tweaking and reviewing updates to systems that have already been built to improve speed, reduce space consumption, and cut production costs. <br />
-  •	Offering assistance and mentoring to students at the Rework Academy. 
-
+                  • Planning, designing, and implementing user interface systems
+                  for websites, software, and web-based applications with HTML,
+                  CSS/SASS, Javascript, jQuery, Node.JS and React. JS. <br />
+                  • Directing the creation of the backend systems with a focus
+                  on speed and size <br />
+                  • Tweaking and reviewing updates to systems that have already
+                  been built to improve speed, reduce space consumption, and cut
+                  production costs. <br />• Offering assistance and mentoring to
+                  students at the Rework Academy.
                 </p>
               </div>
             </div>
@@ -238,7 +242,7 @@ export default function About() {
             </div>
 
             <div className="timeline">
-              <div className="date">2022</div>
+              <div className="date">2021 - PRESENT</div>
               <div className="body">
                 <div className="role">
                   FULL-STACK WEB DEVELOPMENT COURSE -{" "}
@@ -267,10 +271,14 @@ export default function About() {
                     MARYLAND GLOBAL INITIATIVES CORPORATION
                   </span>
                 </div>
-                <p> •	Gathering, organizing, and analyzing research data to develop the COVID-19 vaccination safety profile in Nigeria; <br />
-•	Assisting the software development team with building, testing, and deploying the research web application. <br />
-•	Software testing and bug reports
-
+                <p>
+                  {" "}
+                  • Gathering, organizing, and analyzing research data to
+                  develop the COVID-19 vaccination safety profile in Nigeria;{" "}
+                  <br />
+                  • Assisting the software development team with building,
+                  testing, and deploying the research web application. <br />•
+                  Software testing and bug reports
                 </p>
               </div>
             </div>
@@ -282,17 +290,20 @@ export default function About() {
             </div>
 
             <div className="timeline">
-              <div className="date">2019 - 2022</div>
+              <div className="date">2018 - 2021</div>
               <div className="body">
                 <div className="role">
                   FRONT-END ENGINEER -{" "}
                   <span className="company">YWALA TECHNOLOGIES</span>
                 </div>
                 <p>
-                •	Utilizing HTML, CSS, JavaScript, and, jQuery to develop production-ready user interfaces that are responsive across all devices. <br />
-                •	Working with a diverse team that includes architecture, investigation, product development, and engineering to ship products that satisfy both the demands of users and the goals of our current clients. <br />
-  
-
+                  • Utilizing HTML, CSS, JavaScript, and, jQuery to develop
+                  production-ready user interfaces that are responsive across
+                  all devices. <br />
+                  • Working with a diverse team that includes architecture,
+                  investigation, product development, and engineering to ship
+                  products that satisfy both the demands of users and the goals
+                  of our current clients. <br />
                 </p>
               </div>
             </div>
